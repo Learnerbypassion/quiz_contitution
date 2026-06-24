@@ -257,7 +257,381 @@
 /* ============================================================
    MCQ DATA  — each entry: { q, options:[a,b,c,d], answer:0-3, explanation }
    ============================================================ */
+const quizData = {
 
+  "Module 1: Constitution of India": [
+    {
+      q:"Which part of the Constitution guides the State in policy making for social welfare?",
+      options:["Fundamental Rights","Directive Principles of State Policy","Preamble","Amendments"],
+      answer:1,
+      explanation:"Directive Principles of State Policy (DPSP) guide the government in formulating policies for social justice, economic welfare, and equitable development. Though non-justiciable, they are fundamental to governance."
+    },
+    {
+      q:"The power to make laws at the Union level is vested in the ________.",
+      options:["Parliament","Judiciary","Election Commission","Finance Commission"],
+      answer:0,
+      explanation:"Parliament, consisting of the Lok Sabha and Rajya Sabha, is the legislative body empowered to enact laws for the entire country."
+    },
+    {
+      q:"The President of India is a part of the ________.",
+      options:["Judiciary","Executive","Media","Municipal Body"],
+      answer:1,
+      explanation:"The President is the constitutional head of the Union Executive and performs executive functions as prescribed by the Constitution."
+    },
+    {
+      q:"Who appoints the Governor of a State in India?",
+      options:["Prime Minister","Chief Justice","President","Chief Minister"],
+      answer:2,
+      explanation:"Under Article 155 of the Constitution, the Governor of a State is appointed by the President of India."
+    },
+    {
+      q:"Which part of the Constitution of India declares India as a Sovereign, Socialist, Secular, Democratic Republic?",
+      options:["Preamble","Fundamental Rights","DPSP","Schedule"],
+      answer:0,
+      explanation:"The Preamble reflects the philosophy and ideals of the Constitution and defines the nature of the Indian State."
+    },
+    {
+      q:"Which of the following is a Fundamental Duty of Indian citizens?",
+      options:["Right to Equality","Freedom of Speech","Protect public property","Right to Education"],
+      answer:2,
+      explanation:"Protecting public property and abjuring violence is a Fundamental Duty under Article 51A."
+    },
+    {
+      q:"Who is the constitutional head of the State Government in India?",
+      options:["Chief Minister","Governor","President","Prime Minister"],
+      answer:1,
+      explanation:"The Governor is the constitutional head of a State, while the Chief Minister is the real executive head."
+    },
+    {
+      q:"Which feature reflects the division of powers between the Centre and States in India?",
+      options:["Unitary Government","Federal System","Dictatorship","Monarchy"],
+      answer:1,
+      explanation:"India follows a federal structure where powers are distributed between the Union and State Governments."
+    },
+    {
+      q:"The Council of Ministers is collectively responsible to the:",
+      options:["President","Lok Sabha","Supreme Court","Governor"],
+      answer:1,
+      explanation:"Under Article 75, the Council of Ministers is collectively responsible to the Lok Sabha."
+    },
+    {
+      q:"Which Fundamental Right protects citizens against discrimination?",
+      options:["Right to Freedom","Right to Equality","Right against Exploitation","Cultural Rights"],
+      answer:1,
+      explanation:"The Right to Equality ensures equal treatment before law and prohibits discrimination."
+    },
+    {
+      q:"Which of the following is a salient feature of the Indian Constitution?",
+      options:["Absolute Monarchy","Military Rule","Parliamentary Democracy","One-party System"],
+      answer:2,
+      explanation:"India follows a parliamentary democratic system where the executive is responsible to the legislature."
+    }
+  ],
+
+  "Module 2: Introduction to Ethical Thinking & Values": [
+    {
+      q:"Work ethics mainly promotes ________.",
+      options:["Laziness","Corruption","Discipline and responsibility","Bias"],
+      answer:2,
+      explanation:"Work ethics encourage sincerity, punctuality, discipline, commitment, and accountability in professional life."
+    },
+    {
+      q:"Which of the following is a negative value?",
+      options:["Honesty","Punctuality","Respect","Corruption"],
+      answer:3,
+      explanation:"Corruption is a negative value because it violates ethical principles such as honesty, fairness, and integrity."
+    },
+    {
+      q:"Professional ethics is most relevant to a person's ________.",
+      options:["Conduct in profession","Hobbies only","Family name","Physical strength"],
+      answer:0,
+      explanation:"Professional ethics guide how individuals behave and make decisions within their professional roles and responsibilities."
+    },
+    {
+      q:"Ethics primarily deals with the study of ________.",
+      options:["Markets","Moral principles","Machines","Laws only"],
+      answer:1,
+      explanation:"Ethics is the branch of philosophy that studies moral values, principles, and standards of human conduct."
+    },
+    {
+      q:"Which of the following is an example of a positive value?",
+      options:["Dishonesty","Greed","Integrity","Negligence"],
+      answer:2,
+      explanation:"Integrity represents honesty, consistency, and adherence to strong moral principles."
+    },
+    {
+      q:"Which is NOT a characteristic of ethical values?",
+      options:["Honesty","Fairness","Integrity","Corruption"],
+      answer:3,
+      explanation:"Corruption violates ethical standards and is considered a negative value."
+    },
+    {
+      q:"Ethical values contribute to professional success by:",
+      options:["Encouraging fraud","Building trust and credibility","Promoting discrimination","Reducing accountability"],
+      answer:1,
+      explanation:"Trust and credibility are essential for long-term professional success."
+    },
+    {
+      q:"An ethical decision should primarily be:",
+      options:["Based only on emotions","Based only on profit","Fair, transparent and justified","Based only on authority"],
+      answer:2,
+      explanation:"Ethical decisions should consider fairness, stakeholders, and moral principles."
+    }
+  ],
+
+  "Module 3: Engineering Ethics, Theories, Codes & Case Studies": [
+    {
+      q:"Utilitarianism judges an action based on its ________.",
+      options:["Intention only","Rules only","Consequences","Tradition"],
+      answer:2,
+      explanation:"Utilitarianism evaluates actions according to their outcomes and seeks the greatest good for the greatest number."
+    },
+    {
+      q:"Ethical decision-making frameworks help managers to make ________.",
+      options:["Random decisions","Fair and reasoned decisions","Emotional decisions only","Delayed decisions"],
+      answer:1,
+      explanation:"Ethical frameworks provide structured methods for evaluating alternatives and making rational, fair decisions."
+    },
+    {
+      q:"Social audit mainly evaluates an organization's ________.",
+      options:["Cricket score","Social and ethical performance","Colour scheme","Furniture cost"],
+      answer:1,
+      explanation:"Social audits assess the impact of organizational activities on society, stakeholders, and ethical standards."
+    },
+    {
+      q:"A conflict of interest occurs when personal interest affects ________.",
+      options:["Entertainment","Weather","Professional judgment","Sports"],
+      answer:2,
+      explanation:"A conflict of interest exists when personal gain interferes with objective professional decision-making."
+    },
+    {
+      q:"Reporting unethical practices within an organization is known as ________.",
+      options:["Lobbying","Whistle blowing","Outsourcing","Benchmarking"],
+      answer:1,
+      explanation:"Whistle blowing refers to exposing unethical, illegal, or unsafe practices occurring within an organization."
+    },
+    {
+      q:"The Bhopal Gas Tragedy is commonly cited as a case of failure in ________.",
+      options:["Engineering ethics and safety","Sportsmanship","Agriculture","Banking"],
+      answer:0,
+      explanation:"The disaster highlighted severe lapses in industrial safety, ethical responsibility, and risk management."
+    },
+    {
+      q:"Which quality is most essential for an ethical leader?",
+      options:["Bias","Integrity","Secrecy","Aggression"],
+      answer:1,
+      explanation:"Integrity helps leaders earn trust and maintain ethical standards in organizations."
+    },
+    {
+      q:"Deontological ethics emphasizes ________.",
+      options:["Duty and rules","Profit maximization","Happiness only","Popularity"],
+      answer:0,
+      explanation:"Deontology focuses on moral duties and principles rather than the consequences of actions."
+    },
+    {
+      q:"Moral autonomy refers to:",
+      options:["Blind obedience to authority","Independent ethical decision making","Following company profits only","Avoiding responsibility"],
+      answer:1,
+      explanation:"Moral autonomy is the ability to think independently and make ethical decisions based on one's own moral reasoning."
+    },
+    {
+      q:"Professional codes of ethics are primarily intended to:",
+      options:["Increase salaries","Guide professional conduct","Reduce working hours","Promote competition"],
+      answer:1,
+      explanation:"Professional codes provide standards and guidelines that help professionals act ethically and responsibly."
+    },
+    {
+      q:"Which industrial disaster is associated with a nuclear power plant accident?",
+      options:["Bhopal Gas Tragedy","Chernobyl Disaster","Titanic Disaster","Challenger Accident"],
+      answer:1,
+      explanation:"The Chernobyl Disaster of 1986 was one of the world's worst nuclear accidents and remains a major engineering ethics case study."
+    },
+    {
+      q:"A moral dilemma occurs when:",
+      options:["There is only one correct choice","Two or more ethical values conflict","Rules are absent","Profit is guaranteed"],
+      answer:1,
+      explanation:"Moral dilemmas arise when competing ethical principles make decision-making difficult."
+    },
+    {
+      q:"Which ethical theory emphasizes character and moral virtues?",
+      options:["Utilitarianism","Deontology","Virtue Ethics","Relativism"],
+      answer:2,
+      explanation:"Virtue Ethics focuses on developing good character traits such as honesty and courage."
+    },
+    {
+      q:"An engineer refusing to compromise safety despite pressure demonstrates:",
+      options:["Bias","Moral Autonomy","Corruption","Lobbying"],
+      answer:1,
+      explanation:"Moral autonomy involves making independent ethical decisions based on moral principles."
+    },
+    {
+      q:"Professional codes of ethics primarily help professionals to:",
+      options:["Increase profits","Avoid teamwork","Resolve ethical issues responsibly","Reduce workload"],
+      answer:2,
+      explanation:"Codes of ethics provide guidance when professionals face ethical dilemmas."
+    },
+    {
+      q:"Which is an example of responsibility towards customers?",
+      options:["Concealing product defects","Ensuring product safety and quality","Ignoring complaints","Misleading advertisements"],
+      answer:1,
+      explanation:"Engineers must prioritize safety, quality, and honesty while serving customers."
+    },
+    {
+      q:"Engineers have a responsibility towards employees to ensure:",
+      options:["Exploitation","Fair and safe working conditions","Unequal treatment","Harassment"],
+      answer:1,
+      explanation:"Ethical organizations ensure dignity, safety, and fairness for employees."
+    },
+    {
+      q:"Job discrimination refers to:",
+      options:["Fair treatment","Unequal treatment based on irrelevant factors","Equal opportunity","Merit-based recruitment"],
+      answer:1,
+      explanation:"Discrimination occurs when decisions are based on gender, caste, religion, or similar factors."
+    },
+    {
+      q:"Employee exploitation may include:",
+      options:["Reasonable compensation","Excessive work with unfair wages","Skill development","Promotions based on merit"],
+      answer:1,
+      explanation:"Exploitation occurs when workers are treated unfairly or denied proper compensation."
+    },
+    {
+      q:"Social responsibility of technologists includes:",
+      options:["Ignoring public welfare","Protecting public safety and environment","Maximizing profit alone","Avoiding accountability"],
+      answer:1,
+      explanation:"Engineers must ensure technology benefits society without causing harm."
+    },
+    {
+      q:"Which ethical theory focuses on adherence to moral duties?",
+      options:["Virtue Ethics","Deontology","Utilitarianism","Hedonism"],
+      answer:1,
+      explanation:"Deontology judges actions based on duties and moral obligations."
+    },
+    {
+      q:"The Chernobyl Disaster occurred in:",
+      options:["Chemical Industry","Nuclear Power Plant","Banking Sector","Agriculture"],
+      answer:1,
+      explanation:"Chernobyl was a catastrophic nuclear reactor accident in 1986."
+    },
+    {
+      q:"A major lesson from the Chernobyl Disaster is:",
+      options:["Importance of marketing","Importance of safety culture and accountability","Importance of advertising","Importance of outsourcing"],
+      answer:1,
+      explanation:"The disaster highlighted the consequences of poor safety practices and negligence."
+    },
+    {
+      q:"Which document formally specifies acceptable professional conduct?",
+      options:["Constitution","Professional Code of Ethics","Patent","Social Audit"],
+      answer:1,
+      explanation:"A professional code of ethics outlines expected standards of behavior and responsibilities within a profession."
+    },
+    {
+      q:"Ethical decision-making frameworks help in:",
+      options:["Structured analysis of ethical issues","Random judgment","Avoiding responsibility","Delaying action"],
+      answer:0,
+      explanation:"Ethical decision-making frameworks provide a systematic process for evaluating ethical dilemmas and selecting appropriate actions."
+    },
+    {
+      q:"One responsibility of engineers towards shareholders is:",
+      options:["Concealing risks","Ensuring responsible use of resources","Ignoring financial impacts","Avoiding accountability"],
+      answer:1,
+      explanation:"Engineers must use organizational resources responsibly and act in ways that protect stakeholder interests."
+    }
+  ],
+
+  "Module 4: Business Ethics, IPR & Workplace Issues": [
+    {
+      q:"A patent is a type of ________.",
+      options:["Tax","Intellectual Property Right","Public holiday","Insurance policy"],
+      answer:1,
+      explanation:"A patent protects inventions by granting exclusive rights to inventors for a specified period."
+    },
+    {
+      q:"Which of the following is an example of occupational crime?",
+      options:["Teamwork","Innovation","Fraud at workplace","Mentoring"],
+      answer:2,
+      explanation:"Occupational crimes are illegal or unethical acts committed by individuals during the course of their employment."
+    },
+    {
+      q:"Unauthorized use of another person's original work is called ________.",
+      options:["Innovation","Patenting","Licensing","Plagiarism"],
+      answer:3,
+      explanation:"Plagiarism involves presenting someone else's work, ideas, or words as one's own without proper acknowledgment."
+    },
+    {
+      q:"Intellectual Property Rights help to protect ________.",
+      options:["Physical fitness","Creative works and inventions","Weather reports","Public holidays"],
+      answer:1,
+      explanation:"IPR protects intellectual creations such as inventions, literary works, trademarks, copyrights, and industrial designs."
+    },
+    {
+      q:"Gender equality in workplaces promotes:",
+      options:["Bias","Fair opportunities for all employees","Discrimination","Occupational crime"],
+      answer:1,
+      explanation:"Gender equality ensures equal treatment, opportunities, and rights irrespective of gender."
+    },
+    {
+      q:"Business ethics influences:",
+      options:["Organizational policies and strategies","Weather forecasting","Sports performance","Entertainment activities"],
+      answer:0,
+      explanation:"Ethical values shape organizational decision-making, governance, policies, and long-term strategies."
+    },
+    {
+      q:"Which of the following best describes Business Ethics?",
+      options:["Maximizing profit at any cost","Applying ethical principles in business decisions","Avoiding regulations","Ignoring stakeholders"],
+      answer:1,
+      explanation:"Business ethics ensures responsible and morally acceptable business conduct."
+    },
+    {
+      q:"Ethical business practices generally result in:",
+      options:["Loss of trust","Increased corruption","Improved reputation and sustainability","Legal violations"],
+      answer:2,
+      explanation:"Ethical organizations build trust and achieve long-term success."
+    },
+    {
+      q:"Academic misconduct includes:",
+      options:["Original research","Fabrication and falsification of data","Proper citation","Patent filing"],
+      answer:1,
+      explanation:"Fabrication and falsification are serious violations of academic integrity."
+    },
+    {
+      q:"Which IPR protects literary and artistic works?",
+      options:["Patent","Copyright","Trademark","Trade Secret"],
+      answer:1,
+      explanation:"Copyright protects books, software, music, artistic creations, and similar works."
+    },
+    {
+      q:"A trademark primarily protects:",
+      options:["Inventions","Brand names and logos","Research papers","Industrial designs only"],
+      answer:1,
+      explanation:"Trademarks distinguish the goods or services of one entity from another."
+    },
+    {
+      q:"Ethical leadership is characterized by:",
+      options:["Manipulation","Favoritism","Honesty and accountability","Secrecy"],
+      answer:2,
+      explanation:"Ethical leaders inspire trust through fairness, transparency, and accountability."
+    },
+    {
+      q:"Fostering integrity in teams requires:",
+      options:["Ignoring misconduct","Leading by ethical example","Encouraging favouritism","Concealing mistakes"],
+      answer:1,
+      explanation:"Leaders influence team behaviour by demonstrating ethical conduct."
+    },
+    {
+      q:"Workplace gender-based issues include:",
+      options:["Equal pay for equal work","Sexual harassment and unequal opportunities","Professional growth","Ethical leadership"],
+      answer:1,
+      explanation:"Gender-based issues undermine fairness and workplace dignity."
+    },
+    {
+      q:"Which stakeholder group provides capital to an organization?",
+      options:["Customers","Shareholders","Suppliers","Employees"],
+      answer:1,
+      explanation:"Shareholders invest funds and therefore have a legitimate interest in organizational performance."
+    }
+  ]
+
+};
 
 /* ============================================================
    STATE & LOGIC
